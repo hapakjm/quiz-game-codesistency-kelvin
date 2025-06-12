@@ -6,8 +6,89 @@
     <title>Quiz Game</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/0f7c288ec8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container float-effect">
+      <div class="screen active" id="start-screen">
+        <div class="screen-header">
+          <h1>Quiz Time!</h1>
+          <p>Test your knowledge with this fun quiz game.</p>
+        </div>
+        <div class="screen-main">
+          <button class="game-mode float-effect" id="mode-all">
+            <i class="fa-solid fa-image"></i>
+            All-in-One
+          </button>
+          <button class="game-mode float-effect" id="mode-one">
+            <i class="fa-solid fa-image"></i>
+            One-by-One
+          </button>
+        </div>
+        <div class="screen-footer">
+          <button class="float-effect" id="start-btn" disabled>
+            Start Quiz
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="screen active" id="start-screen">
+        <div class="screen-header">
+          <h1>Quiz Time!</h1>
+          <p>Test your knowledge with this fun quiz game.</p>
+        </div>
+        <div class="screen-info">
+          <div class="game-mode-container">
+            <input type="checkbox" id="enable-timer" />
+            <label for="enable-timer">Enable Timer</label><br />
+
+            <input type="checkbox" id="enable-back-btn" />
+            <label for="enable-back-btn">Enable Back Button</label><br />
+
+            <input type="checkbox" id="show-correct-answer" />
+            <label for="show-correct-answer">Show Correct Answer</label><br />
+
+            <input type="checkbox" id="show-current-score" />
+            <label for="show-current-score">Show Current Score</label><br />
+
+            <form action="/">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <label for="html">HTML</label><br />
+              <input type="radio" id="css" name="fav_language" value="CSS" />
+              <label for="css">CSS</label><br />
+              <input
+                type="radio"
+                id="javascript"
+                name="fav_language"
+                value="JavaScript"
+              />
+              <label for="javascript">JavaScript</label><br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        <button id="start-btn">Start Quiz</button>
+      </div> -->
+
+      <!-- <div class="screen" id="quiz-screen">
+        <div class="quiz-wrapper">
+          <h2 id="question">Question will appear here</h2>
+          <ul id="options">
+          </ul>
+          <button id="next-btn" class="hidden">Next Question</button>
+        </div>
+      </div> -->
+
+      <!-- <div class="screen" id="result-screen">
+        <div class="result-wrapper">
+          <h2>Your Score: <span id="score">0</span></h2>
+          <p>Thank you for playing!</p>
+          <button id="restart-btn">Restart Quiz</button>
+        </div>
+      </div> -->
+    </div>
   </body>
 </html>
